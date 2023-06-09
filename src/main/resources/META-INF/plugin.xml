@@ -8,14 +8,21 @@
     <name>Glab</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="minenkom1@gmail.com" url="https://github.com/minenkom/glab">Maksym Minenko</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+<p>GLab is a plugin for IntelliJ IDEA that streamlines your workflow by allowing you to checkout GitLab projects directly from a custom toolbox. The plugin interacts with the GitLab API to display a list of all available projects in your GitLab instance. With its integrated search functionality, you can easily find and select a project for checkout.</p>
+
+<h2>Features</h2>
+<ul>
+  <li>Direct access to your GitLab projects within IntelliJ IDEA.</li>
+  <li>Checkout functionality that allows you to clone GitLab projects directly from the custom toolbox.</li>
+  <li>Search functionality to find specific projects quickly.</li>
+  <li>Configurable GitLab API base URL and GitLab token.</li>
+</ul>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
