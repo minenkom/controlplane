@@ -98,6 +98,7 @@ public class MyToolWindowFactory implements ToolWindowFactory {
         GitLabTokenSettings settings = GitLabTokenSettings.getInstance();
         HttpUrl.Builder urlBuilder = HttpUrl.parse(settings.gitLabApiBaseUrl).newBuilder();
         urlBuilder.addQueryParameter("search", text);
+        urlBuilder.addQueryParameter("per_page", "50");
         Request request = new Request.Builder()
                 .url(urlBuilder.build())
                 .addHeader("PRIVATE-TOKEN", settings.gitLabToken)
@@ -124,7 +125,7 @@ public class MyToolWindowFactory implements ToolWindowFactory {
         checkingOutLabel.setVisible(false);
 
         for (GitLabProject gitLabProject : gitLabProjects) {
-            JLabel projectLabel = new JLabel(gitLabProject.getName());
+            JLabel projectLabel = new JLabel(gitLabProject.getPathWithNamespace());
             projectLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             projectLabel.addMouseListener(new MouseAdapter() {
                 @Override
@@ -210,12 +211,18 @@ public class MyToolWindowFactory implements ToolWindowFactory {
         private String name;
         private String http_url_to_repo;
 
+        private String path_with_namespace;
+
         String getName() {
             return name;
         }
 
         String getHttpUrlToRepo() {
             return http_url_to_repo;
+        }
+
+        String getPathWithNamespace() {
+            return path_with_namespace;
         }
     }
 }

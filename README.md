@@ -2,6 +2,11 @@
 
 GLab is a plugin for IntelliJ IDEA that streamlines your workflow by allowing you to checkout GitLab projects directly from a custom toolbox. The plugin interacts with the GitLab API to display a list of all available projects in your GitLab instance. With its integrated search functionality, you can easily find and select a project for checkout.
 
+## Important Note on Directory Replacement During Checkout
+Please be aware that during the checkout process, specific directories in opened project will be automatically replaced without any prompts or confirmation messages. This behavior is designed for efficient file handling within the system.
+This means any uncommitted changes in these directories may be lost. Before performing a checkout, ensure that all important modifications have been properly saved, committed, or backed up elsewhere.
+Remember to always commit or stash your changes to prevent any loss of work.
+
 ## Features
 - Direct access to your GitLab projects within IntelliJ IDEA.
 - Checkout functionality that allows you to clone GitLab projects directly from the custom toolbox.
