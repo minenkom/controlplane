@@ -1,4 +1,4 @@
-package com.glab.glab;
+package com.controlplane.controlplane;
 
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;

@@ -1,20 +1,20 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.glab.glab</id>
+    <id>com.controlplane.controlplane</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Glab</name>
+    <name>ControlPlane</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="minenkom1@gmail.com" url="https://github.com/minenkom/glab">Maksym Minenko</vendor>
+    <vendor email="minenkom1@gmail.com" url="https://github.com/minenkom/controlplane">Maksym Minenko</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-<p>GLab is a plugin for IntelliJ IDEA that streamlines your workflow by allowing you to checkout GitLab projects directly from a custom toolbox. The plugin interacts with the GitLab API to display a list of all available projects in your GitLab instance. With its integrated search functionality, you can easily find and select a project for checkout.</p>
+<p>ControlPlane is a plugin for IntelliJ IDEA that streamlines your workflow by allowing you to checkout GitLab projects directly from a custom toolbox. The plugin interacts with the GitLab API to display a list of all available projects in your GitLab instance. With its integrated search functionality, you can easily find and select a project for checkout.</p>
 <p>Please be aware that during the checkout process, specific directories in opened project will be automatically replaced without any prompts or confirmation messages. This behavior is designed for efficient file handling within the system.
 This means any uncommitted changes in these directories may be lost. Before performing a checkout, ensure that all important modifications have been properly saved, committed, or backed up elsewhere.
 Remember to always commit or stash your changes to prevent any loss of work.</p>
@@ -34,8 +34,8 @@ Remember to always commit or stash your changes to prevent any loss of work.</p>
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="GLab" anchor="right" factoryClass="com.glab.glab.MyToolWindowFactory"/>
-        <applicationConfigurable instance="com.glab.glab.GitLabTokenConfigurable" />
-        <applicationService serviceImplementation="com.glab.glab.GitLabTokenSettings"/>
+        <toolWindow id="ControlPlane" anchor="right" factoryClass="com.controlplane.controlplane.MyToolWindowFactory"/>
+        <applicationConfigurable instance="com.controlplane.controlplane.GitLabTokenConfigurable" />
+        <applicationService serviceImplementation="com.controlplane.controlplane.GitLabTokenSettings"/>
     </extensions>
 </idea-plugin>

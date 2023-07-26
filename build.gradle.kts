@@ -4,7 +4,7 @@ plugins {
     id("org.jetbrains.intellij") version "1.13.3"
 }
 
-group = "com.glab"
+group = "com.controlplane"
 version = "1.1"
 
 repositories {

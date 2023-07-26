@@ -1,4 +1,4 @@
-package com.glab.glab;
+package com.controlplane.controlplane;
 import com.intellij.openapi.options.*;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.Nullable;

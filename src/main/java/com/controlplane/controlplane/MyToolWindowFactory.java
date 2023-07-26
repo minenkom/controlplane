@@ -1,4 +1,4 @@
-package com.glab.glab;
+package com.controlplane.controlplane;
 
 import com.intellij.openapi.vfs.VfsUtilCore;
 import com.intellij.openapi.vfs.VirtualFile;
