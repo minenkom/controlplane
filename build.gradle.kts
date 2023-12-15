@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.controlplane"
-version = "1.1"
+version = "1.4"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("222")
-        untilBuild.set("232.*")
+        untilBuild.set("242.*")
     }
 
     signPlugin {

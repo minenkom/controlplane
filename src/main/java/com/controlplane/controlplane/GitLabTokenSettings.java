@@ -1,5 +1,6 @@
 package com.controlplane.controlplane;
 
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
@@ -22,6 +23,6 @@ public class GitLabTokenSettings implements PersistentStateComponent<GitLabToken
     }
 
     public static GitLabTokenSettings getInstance() {
-        return ServiceManager.getService(GitLabTokenSettings.class);
+        return ApplicationManager.getApplication().getService(GitLabTokenSettings.class);
     }
 }

@@ -43,7 +43,7 @@ public class MyToolWindowFactory implements ToolWindowFactory {
         SimpleToolWindowPanel panel = new SimpleToolWindowPanel(false);
         panel.add(createMyToolWindowContent(project));
         toolWindow.getContentManager().addContent(
-            ContentFactory.SERVICE.getInstance().createContent(panel, "", false)
+            ContentFactory.getInstance().createContent(panel, "", false)
         );
     }
 
